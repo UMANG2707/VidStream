@@ -62,16 +62,10 @@ var videoController = {
         var that = this;
 
         var firebaseConfig = {
-            apiKey: "AIzaSyBCO31VFtK82ywCcay_XQI9C4HomyVY4SA",
-            authDomain: "vidstreamaws.firebaseapp.com",
-            databaseURL: "https://vidstreamaws.firebaseio.com",
-            projectId: "vidstreamaws",
-            storageBucket: "vidstreamaws.appspot.com",
-            messagingSenderId: "41954636723",
-            appId: "1:41954636723:web:ca487e1943bc853c1ad1c6"
+            // Database Configuration
         };
 
-        firebase.initializeApp(config);
+        firebase.initializeApp(firebaseConfig);
 
         var firebaseRef = firebase.database().ref();
 
